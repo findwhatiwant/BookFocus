@@ -19,12 +19,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintVertical_bias="0.45">
 
-        <ImageView
-            android:id="@+id/center_icon"
+        <ImageButton
+            android:id="@+id/center_button"
             android:layout_width="64dp"
             android:layout_height="64dp"
-            android:src="@drawable/ic_clock"
-            android:contentDescription="clock" />
+            android:src="@drawable/bookicon"
+            android:contentDescription="Center action"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"/>
 
         <TextView
             android:id="@+id/center_title"
@@ -35,13 +38,14 @@
             android:textStyle="bold"
             android:textColor="#222222"
             android:layout_marginTop="12dp" />
+
     </LinearLayout>
 
     <!-- 하단 내비게이션 -->
-    <!--
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
         app:itemIconTint="@color/bottom_nav_icon_tint"
@@ -53,6 +57,6 @@
         app:elevation="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-        -->
+        app:layout_constraintEnd_toEndOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
