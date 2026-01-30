@@ -10,7 +10,6 @@
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:src="@drawable/bookicon_focus"
-        android:contentDescription="Center action"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:scaleType="centerInside"
         android:adjustViewBounds="true"
