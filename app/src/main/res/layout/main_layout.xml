@@ -1,10 +1,14 @@
 
     <!-- main_layout.xml -->
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/white">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tool="http://schemas.android.com/tools"
+        android:background="@android:color/white"
+        tool:context=".MainActivity">
+
+
 
     <!-- 중앙 아이콘 + 타이틀을 묶은 레이아웃 (약간 위쪽에 위치) -->
     <LinearLayout
@@ -13,8 +17,8 @@
         android:gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/bottom_nav"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintVertical_bias="0.45">
@@ -24,9 +28,9 @@
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:src="@drawable/bookicon"
-            android:background="?attr/selectableItemBackgroundBorderless"
+            android:background="@color/focus_background"
             android:scaleType="centerInside"
-            android:adjustViewBounds="true"/>
+            />
 
         <TextView
             android:id="@+id/center_title"
@@ -38,10 +42,10 @@
             android:textColor="#222222"
             android:layout_marginTop="12dp" />
 
+
     </LinearLayout>
 
     <!-- 하단 내비게이션 -->
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"
         android:layout_width="match_parent"
@@ -51,11 +55,10 @@
         app:itemTextColor="@color/bottom_nav_text_tint"
         app:menu="@menu/bottom_nav_menu"
         app:labelVisibilityMode="labeled"
-        app:itemActiveIndicatorStyle="@style/Widget.MaterialComponents.BottomNavigationView"
-        app:itemRippleColor="@color/transparent"
-        app:elevation="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingBottom="100dp"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
