@@ -10,40 +10,15 @@
 
 
 
-    <!-- 중앙 아이콘 + 타이틀을 묶은 레이아웃 (약간 위쪽에 위치) -->
-    <LinearLayout
-        android:id="@+id/center_group"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/bottom_nav"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom_nav"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.45">
+        app:layout_constraintEnd_toEndOf="parent" />
 
-        <ImageButton
-            android:id="@+id/center_button"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:src="@drawable/bookicon"
-            android:background="@color/focus_background"
-            android:scaleType="centerInside"
-            />
-
-        <TextView
-            android:id="@+id/center_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Let's Dive"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:textColor="#222222"
-            android:layout_marginTop="12dp" />
-
-
-    </LinearLayout>
 
     <!-- 하단 내비게이션 -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -58,7 +33,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:paddingBottom="100dp"/>
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

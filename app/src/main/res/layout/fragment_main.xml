@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainFragment">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/center_group"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageButton
+            android:id="@+id/center_button"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/bookicon"
+            android:background="@color/focus_background"
+            android:scaleType="centerInside"
+            />
+
+        <TextView
+            android:id="@+id/center_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's Dive"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginTop="12dp" />
+
+
+    </LinearLayout>
+
+</FrameLayout>
