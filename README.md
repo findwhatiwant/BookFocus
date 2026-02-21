@@ -47,6 +47,13 @@ Resolves: #123
 Ref: #456
 Related to: #48, #45
 
+## 🏅 중간 개발 현황
+<img width="1080" height="2280" alt="Screenshot_20260221_145425" src="https://github.com/user-attachments/assets/f4e990ee-e51c-4316-a2bd-359eea0ca097" />
+<img width="1080" height="2280" alt="Screenshot_20260221_145448" src="https://github.com/user-attachments/assets/ba5f7c61-f1eb-4506-aed9-ddfdc4c353f9" />
+
+* 백색 소음 기능 & 타이머 구현
+* 도서 검색 API 연동하여 개인 도서 라이브러리 개발 중
+
   
 
 
